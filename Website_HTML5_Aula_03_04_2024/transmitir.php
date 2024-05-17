@@ -9,7 +9,7 @@ $senha = $_POST['senha'];
 try{
 $conn = new PDO("mysql:host=$servidor;dbname=mydb", $username,$password);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$login = "SELECT cadastro.nome FROM usuarios WHERE email =='brendo99@gmail.com' and senha=='123'";
+$login = "SELECT cadastro.nome FROM usuarios WHERE email =='marcelo@dominio.com' and senha=='123'";
 $login = $conn->prepare($login);
  $result = $login->fetch();
 if ($email=="marcelo@dominio.com" and $senha=="123"){
